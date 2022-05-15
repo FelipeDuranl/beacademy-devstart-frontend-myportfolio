@@ -1,10 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&family=Poppins:wght@300;400&family=Roboto:wght@100&display=swap");
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1.8rem; }
+
+h2 {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 7.7ram;
+  color: #f5f5f5; }
+  h2 span {
+    color: #4847fa; }
+
+.btn-primary {
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #4847fa;
+  color: #171717;
+  padding: 1rem 2.6rem; }
+
+.btnprimary.empty {
+  border: 2px solid #4847fa;
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  color: #4847fa;
+  background: transparent; }
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Poppins", sans-serif; }
 
 html {
   font-size: 62.5%;
@@ -12,7 +49,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background: #171717; }
 
 img {
   max-width: 100%;
@@ -22,3 +60,142 @@ button {
   border: none;
   outline: none;
   cursor: pointer; }
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1.8rem; }
+
+h2 {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 7.7ram;
+  color: #f5f5f5; }
+  h2 span {
+    color: #4847fa; }
+
+.btn-primary {
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #4847fa;
+  color: #171717;
+  padding: 1rem 2.6rem; }
+
+.btnprimary.empty {
+  border: 2px solid #4847fa;
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  color: #4847fa;
+  background: transparent; }
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1.8rem; }
+
+h2 {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 7.7ram;
+  color: #f5f5f5; }
+  h2 span {
+    color: #4847fa; }
+
+.btn-primary {
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #4847fa;
+  color: #171717;
+  padding: 1rem 2.6rem; }
+
+.btnprimary.empty {
+  border: 2px solid #4847fa;
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  color: #4847fa;
+  background: transparent; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 0rem;
+  z-index: 2022; }
+  header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .container nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      header .container nav .menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        header .container nav .menu li {
+          margin-right: 4.8rem; }
+          header .container nav .menu li .menu-item {
+            display: inline-block;
+            color: #4847fa;
+            font-weight: 700;
+            line-height: 2.4rem; }
+      header .container nav .menu-social {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 4rem;
+        gap: 3.4rem; }
