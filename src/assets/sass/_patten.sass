@@ -12,6 +12,8 @@ $detatls-color: #2f31ff
 $strong-color: #0809f8
 $relacion-color: #8a2be2
 
+#menu
+    background-color: rgba(23, 23, 23, 0.3)
 .container
     width: 100%
     max-width: 1246px
@@ -40,9 +42,26 @@ h2
     background: $primary-color
     color: $black-color
     padding: 1rem 2.6rem
+    transition: all 0.2s
+    &:hover
+        background: $white-color
+        transform: scale(1.04)
 
 .btn-primary.empty
     border: 2px solid $primary-color
     border-radius: 2.4rem
     color: $primary-color
     background: transparent
+    transition: all 0.2s
+    &:hover
+        background: $primary-color
+        transform: scale(1.04)
+        color: $black-color
+
+.tag
+    border-radius: 5rem
+    padding: 0.6rem 2rem
+    background: $white-color
+    font-size: 1.2rem
+    font-weight: 300
+

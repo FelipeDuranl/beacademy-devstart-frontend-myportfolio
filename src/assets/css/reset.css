@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&family=Poppins:wght@300;400&family=Roboto:wght@100&display=swap");
+#menu {
+  background-color: rgba(23, 23, 23, 0.3); }
+
 .container {
   width: 100%;
   max-width: 1246px;
@@ -25,14 +28,39 @@ h2 {
   line-height: 2.4rem;
   background: #4847fa;
   color: #171717;
-  padding: 1rem 2.6rem; }
+  padding: 1rem 2.6rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .btn-primary:hover {
+    background: #f5f5f5;
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04); }
 
 .btn-primary.empty {
   border: 2px solid #4847fa;
   -webkit-border-radius: 2.4rem;
           border-radius: 2.4rem;
   color: #4847fa;
-  background: transparent; }
+  background: transparent;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .btn-primary.empty:hover {
+    background: #4847fa;
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
+    color: #171717; }
+
+.tag {
+  -webkit-border-radius: 5rem;
+          border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 300; }
 
 * {
   margin: 0;
