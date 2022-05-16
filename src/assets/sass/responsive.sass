@@ -1,3 +1,4 @@
+@import patten
 @media only screen and (max-width: 1260px)
     .s-sucess
         .container
@@ -77,18 +78,85 @@
     header
         .container
             display: inline-block
+        nav
+            opacity: 0
+            visibility: hidden
+            transition: 0.2s
+            top: -20rem
+            flex-direction: column
+        .menu
+            flex-direction: column
+        .menu, .btn-primary, .menu-social
+            display: none
+            .logo
+                img
+                    width: 8.4rem
+            .show
+                opacity: 1
+                visibility: visible
+                position: fixed
+                width: 100vw
+                height: 100vw
+                top: 0
+                left: 0
+                z-index: 1
+                align-items: center
+                justify-content: center
+                gap: 8rem
+                background: $black-color
             nav
                 opacity: 0
                 visibility: hidden
                 transition: 0.2s
                 top: -20rem
                 flex-direction: column
-                .menu
-                    flex-direction: column
-                .menu, .btn-primary, .menu-social
-                    display: none
-        .logo
-            img
-                width: 8.4rem
+            .menu, .btn-primary, .menu-social
+                display: flex
+            .open-menu
+                position: absolute
+                background-image: url(../img/menu.svg)
+                width: 54px
+                height: 54px
+                background-repeat: no-repeat
+                top: 3.5rem
+                right: 1.5rem
+                display: inline-block
+                cursor: pointer
+            .close-menu
+                position: absolute
+                background-image: url(../img/close.svg)
+                width: 54px
+                height: 54px
+                background-repeat: no-repeat
+                top: 3.5rem
+                right: 4rem
+                display: inline-block
+                cursor: pointer
+            .menu
+                gap: 6rem
+                justify-content: center
+                align-items: center
+                li
+                    margin: 0 auto
+                    a
+                        font-size: 2.4rem
+                .menu-social
+                    margin: 0 auto
 
-// @media only screen and (max-width: 480px)
+@media only screen and (max-width: 624px)
+    .s-hero
+        background-position: center center
+        .container
+            .cards
+                .card
+                    flex-direction: column
+                    .card-title
+                        padding: 0
+                        h3
+                            text-align: center
+                    .card-info
+                        text-align: center
+
+@media only screen and (max-width: 500px)
+    html
+        font-size: 50.2%

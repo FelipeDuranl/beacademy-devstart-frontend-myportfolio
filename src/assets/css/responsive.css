@@ -1,3 +1,66 @@
+#menu {
+  background-color: rgba(23, 23, 23, 0.3); }
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1.8rem; }
+
+h2 {
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #f5f5f5; }
+  h2 span {
+    color: #4847fa; }
+
+.btn-primary {
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: #4847fa;
+  color: #171717;
+  padding: 1rem 2.6rem;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .btn-primary:hover {
+    background: #f5f5f5;
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04); }
+
+.btn-primary.empty {
+  border: 2px solid #4847fa;
+  -webkit-border-radius: 2.4rem;
+          border-radius: 2.4rem;
+  color: #4847fa;
+  background: transparent;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .btn-primary.empty:hover {
+    background: #4847fa;
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
+    color: #171717; }
+
+.tag {
+  -webkit-border-radius: 5rem;
+          border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
 @media only screen and (max-width: 1260px) {
   .s-sucess .container {
     -webkit-box-orient: vertical;
@@ -147,7 +210,48 @@
 @media only screen and (max-width: 900px) {
   header .container {
     display: inline-block; }
-    header .container nav {
+  header nav {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    top: -20rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  header .menu, header .btn-primary, header .menu-social {
+    display: none; }
+    header .menu .logo img, header .btn-primary .logo img, header .menu-social .logo img {
+      width: 8.4rem; }
+    header .menu .show, header .btn-primary .show, header .menu-social .show {
+      opacity: 1;
+      visibility: visible;
+      position: fixed;
+      width: 100vw;
+      height: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 8rem;
+      background: #171717; }
+    header .menu nav, header .btn-primary nav, header .menu-social nav {
       opacity: 0;
       visibility: hidden;
       -webkit-transition: 0.2s;
@@ -159,13 +263,64 @@
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-      header .container nav .menu {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-      header .container nav .menu, header .container nav .btn-primary, header .container nav .menu-social {
-        display: none; }
-  header .logo img {
-    width: 8.4rem; } }
+    header .menu .menu, header .menu .btn-primary, header .menu .menu-social, header .btn-primary .menu, header .btn-primary .btn-primary, header .btn-primary .menu-social, header .menu-social .menu, header .menu-social .btn-primary, header .menu-social .menu-social {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    header .menu .open-menu, header .btn-primary .open-menu, header .menu-social .open-menu {
+      position: absolute;
+      background-image: url(../img/menu.svg);
+      width: 54px;
+      height: 54px;
+      background-repeat: no-repeat;
+      top: 3.5rem;
+      right: 1.5rem;
+      display: inline-block;
+      cursor: pointer; }
+    header .menu .close-menu, header .btn-primary .close-menu, header .menu-social .close-menu {
+      position: absolute;
+      background-image: url(../img/close.svg);
+      width: 54px;
+      height: 54px;
+      background-repeat: no-repeat;
+      top: 3.5rem;
+      right: 4rem;
+      display: inline-block;
+      cursor: pointer; }
+    header .menu .menu, header .btn-primary .menu, header .menu-social .menu {
+      gap: 6rem;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      header .menu .menu li, header .btn-primary .menu li, header .menu-social .menu li {
+        margin: 0 auto; }
+        header .menu .menu li a, header .btn-primary .menu li a, header .menu-social .menu li a {
+          font-size: 2.4rem; }
+      header .menu .menu .menu-social, header .btn-primary .menu .menu-social, header .menu-social .menu .menu-social {
+        margin: 0 auto; } }
+
+@media only screen and (max-width: 624px) {
+  .s-hero {
+    background-position: center center; }
+    .s-hero .container .cards .card {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .s-hero .container .cards .card .card-title {
+        padding: 0; }
+        .s-hero .container .cards .card .card-title h3 {
+          text-align: center; }
+      .s-hero .container .cards .card .card-info {
+        text-align: center; } }
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50.2%; } }
